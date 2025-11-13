@@ -11,7 +11,7 @@ func overwrite_path(new, old):
 	pass
 
 func _init(modLoader = ModLoader):
-	if "mh" in Global.VERSION:
+	if "mh" in Global.VERSION.to_lower():
 		if ProjectSettings.load_resource_pack("res://ReplayPlus/TimelineMH.zip", true):
 			print("ReplayPlus Timeline for Multihustle installed.")
 
